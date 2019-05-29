@@ -1,13 +1,13 @@
-##Install
+## Install
     pip install -r requirements.txt 依赖包
     python setup.py 完成C++端so库的编译
-##该模块包含了yolo,mask-rcnn和分类模块的训练
+## 该模块包含了yolo,mask-rcnn和分类模块的训练
 
-##trainer.py
+## trainer.py
     训练入口,通过在终端或ide中执行train(testregistry["模型名称"])来进行训练  
     终端训练: python trainer.py
 
-##cfgs
+## cfgs
 ***yolo：***  
 
     anchor聚类
@@ -76,19 +76,19 @@
     5. 网络权重文件和生成的假照片输出路径
     ouput_dir = /home/cobot/test
 
-    
-##darknet  
+  
+## darknet  
     yolo 训练接口接口与源码
 
-##maskrcnn_benchmark
+## maskrcnn_benchmark
     maskrcnn 训练接口与源码
 
-##训练步骤
+## 训练步骤
     1. 准备训练数据和验证数据, 分为两个文件夹存放,标注文件与图片放在同一目录下
     2. 准备网络结构文件(cfg/yaml)和训练配置文件(cfg), 修改某些超参数
     3. 运行trainer.py 并指定训练配置文件
 
-###yolo cfg细则
+### yolo cfg细则
     batch=64  
     subdivisions=2（根据gpu显存进行更改，显存越大subdivision值越小）  
     width=416     （输入图像尺寸）   

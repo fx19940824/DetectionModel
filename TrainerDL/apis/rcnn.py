@@ -3,12 +3,11 @@ import re
 import torch
 
 from TrainerDL.dataprocess.labelme2coco import generate_dataset
-from tools.train_net import train
-from tools.train_net import run_test
-from maskrcnn_benchmark.config import cfg
-from maskrcnn_benchmark.utils.logger import setup_logger
-from maskrcnn_benchmark.utils.comm import get_rank
-from maskrcnn_benchmark.utils.collect_env import collect_env_info
+from Algorithm.maskrcnn_benchmark_stable.tools import train,run_test
+from Algorithm.maskrcnn_benchmark_stable.maskrcnn_benchmark.config import cfg
+from Algorithm.maskrcnn_benchmark_stable.maskrcnn_benchmark.utils.logger import setup_logger
+from Algorithm.maskrcnn_benchmark_stable.maskrcnn_benchmark.utils.comm import get_rank
+from Algorithm.maskrcnn_benchmark_stable.maskrcnn_benchmark.utils.collect_env import collect_env_info
 
 
 def train_rcnn(cfgs):
@@ -116,7 +115,7 @@ def cfg_update_and_freeze(cfgs, load_dataset=False):
     cur_cfg = cfg.clone()
     cur_cfg.merge_from_file(config_file)
     if load_dataset:
-        cur_cfg.PATHS_CATALOG = os.path.abspath("./cfgs/paths_catalog.py")
+        cur_cfg.PATHS_CATALOG = os.path.join(os.path.dirname(os.path.dirname(__file__)),"cfgs/paths_catalog.py")
         cur_cfg = auto_gen_datacfg(cur_cfg, cfgs)
 
     if cfg.is_frozen():

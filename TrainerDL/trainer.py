@@ -1,9 +1,10 @@
 
 import sys
-sys.path.append('/home/cobot/code/caid2.0/python/Algorithm/maskrcnn-benchmark-stable/')
+sys.path.append('/home/fangxin/DetectionModel/')
 
-from TrainerDL.apis import *
-from TrainerDL.Utils.parsers import parse_cfg
+
+from apis import *
+from Utils.parsers import parse_cfg
 import argparse
 import torch
 
@@ -13,7 +14,7 @@ def main():
     parser.add_argument(
         "--configfile",
         help="path to config file",
-        default='/media/cobot/30b0f4a0-3376-4f8f-b458-9c6857504361/Projects/bag/resnext101/train_rcnn.cfg',
+        default='/home/fangxin/DetectionModel/TrainerDL/Projects/BuildingDetection/train_rcnn.cfg',
         type=str,
     )
 

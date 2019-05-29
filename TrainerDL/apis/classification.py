@@ -1,7 +1,7 @@
 from Algorithm.classifications.utils.model_factory import *
 from Algorithm.classifications.utils.transformers import default_transformer
 from Algorithm.classifications.utils import transformers as custom_transformer
-from ..Utils.parsers import parse_cfg
+from Utils.parsers import parse_cfg
 from argparse import Namespace
 
 def train_cls(cfgs):

@@ -8,13 +8,13 @@ class DatasetCatalog(object):
     DATA_DIR = "datasets"
     #   data
     DATASETS = {
-        "mediacobot30b0f4a0-3376-4f8f-b458-9c6857504361DatasetCN-DATABAGtrainDatatrain_cocostyle": {
-            "img_dir": "/media/cobot/30b0f4a0-3376-4f8f-b458-9c6857504361/Dataset/CN-DATA/BAG/train/Data/train",
-            "ann_file": "/media/cobot/30b0f4a0-3376-4f8f-b458-9c6857504361/Dataset/CN-DATA/BAG/train/Data/annotations/instances_Data_train.json"
+        "homefangxinDatasetbuildingcocotrain_cocostyle": {
+            "img_dir": "/home/fangxin/Dataset/building/coco/train",
+            "ann_file": "/home/fangxin/Dataset/building/coco/building_instances_train.json"
         },
-        "mediacobot30b0f4a0-3376-4f8f-b458-9c6857504361DatasetCN-DATABAGtrainDataval_cocostyle": {
-            "img_dir": "/media/cobot/30b0f4a0-3376-4f8f-b458-9c6857504361/Dataset/CN-DATA/BAG/train/Data/val",
-            "ann_file": "/media/cobot/30b0f4a0-3376-4f8f-b458-9c6857504361/Dataset/CN-DATA/BAG/train/Data/annotations/instances_Data_val.json"
+        "homefangxinDatasetbuildingcocoval_cocostyle": {
+            "img_dir": "/home/fangxin/Dataset/building/coco/val",
+            "ann_file": "/home/fangxin/Dataset/building/coco/building_instances_val.json"
         }
 
     }
