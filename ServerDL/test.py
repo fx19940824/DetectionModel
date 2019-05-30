@@ -1,6 +1,6 @@
 import sys
 
-sys.path.append('/home/cobot/code/caid2.0/python/Algorithm/maskrcnn-benchmark-stable/')
+sys.path.append('/home/fangxin/DetectionModel/Algorithm/maskrcnn_benchmark_stable/')
 
 from PIL import Image
 import numpy as np
@@ -20,20 +20,20 @@ def completeDir(dir):
     return dir
 
 if __name__ == '__main__':
-    config_file = "/home/cobot/tube_model/n_rcnn.yaml"
-    dir_path_positive = "/media/cobot/30b0f4a0-3376-4f8f-b458-9c6857504361/Dataset/tube-test/"
-    output_path_positive = "/media/cobot/30b0f4a0-3376-4f8f-b458-9c6857504361/Dataset/result2/"
+    config_file = "/home/fangxin/DetectionModel/TrainerDL/Projects/BuildingDetection/n_rcnn.yaml"
+    dir_path_positive = "/home/fangxin/Dataset/building/test/"
+    output_path_positive = "/home/fangxin/DetectionModel/TrainerDL/Projects/BuildingDetection/result/"
 
     output_path_positive = completeDir(output_path_positive)
 
     isWrite = True
-    postprocess = True
+    postprocess = False
     calculateTime = False
     maskiou_on = False
 
     cfg.merge_from_file(config_file)
 
-    confidence=[0.8]
+    confidence=[0.7]
 
     print(config_file)
     # torch.cuda.set_device(0)

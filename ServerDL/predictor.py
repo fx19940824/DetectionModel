@@ -11,7 +11,7 @@ from maskrcnn_benchmark.structures.image_list import to_image_list
 from maskrcnn_benchmark.modeling.roi_heads.mask_head.inference import Masker
 from maskrcnn_benchmark import layers as L
 from maskrcnn_benchmark.utils import cv2_util
-import ServerDL.apis.postprocesses as pp
+import apis.postprocesses as pp
 import time
 
 
