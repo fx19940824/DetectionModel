@@ -132,7 +132,7 @@ ply==3.11
 post==2018.11.20
 prompt-toolkit==1.0.15
 protobuf==3.6.1
-psutil==5.4.5
+psutil==5.6.6
 ptyprocess==0.5.2
 public==2018.11.20
 py==1.5.3
