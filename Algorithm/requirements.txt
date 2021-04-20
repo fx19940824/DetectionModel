@@ -135,7 +135,7 @@ protobuf==3.6.1
 psutil==5.4.5
 ptyprocess==0.5.2
 public==2018.11.20
-py==1.5.3
+py==1.10.0
 pybm3d==0.2.1
 pycocotools==2.0
 pycodestyle==2.4.0
